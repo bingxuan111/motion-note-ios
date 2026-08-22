@@ -1,0 +1,19 @@
+.DS_Store
+
+# Xcode local state and build products
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# Local secrets and relay runtime
+.env
+.env.*
+local-feishu/runtime/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved

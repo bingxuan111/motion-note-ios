@@ -1,0 +1,36 @@
+name: MotionNote
+options:
+  bundleIdPrefix: com.motionnote
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    IPHONEOS_DEPLOYMENT_TARGET: 17.0
+targets:
+  MotionNote:
+    type: application
+    platform: iOS
+    sources:
+      - path: MotionNote
+        excludes:
+          - Resources
+      - path: MotionNote/Resources
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.motionnote.personal
+        DEVELOPMENT_TEAM: 2V7WLF4BV9
+        INFOPLIST_KEY_CFBundleDisplayName: Motion Note
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: 用于训练中的语音指令和私教课记录。
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: 用于将私教课语音整理为训练计划。
+        INFOPLIST_KEY_NSHealthShareUsageDescription: 用于读取你的训练、活动能量与心率数据。
+        INFOPLIST_KEY_NSHealthUpdateUsageDescription: 用于保存 Motion Note 生成的训练记录。
+    entitlements:
+      path: MotionNote/MotionNote.entitlements
+      properties:
+        com.apple.developer.healthkit: true
+    info:
+      path: MotionNote/Info.plist
+      properties:
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false

@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08F78CE4E8A9B838F673A545 /* motion-note-mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 6662009685D9B8B2A63E0BC9 /* motion-note-mark.png */; };
+		2534C67EDCF8F9753660EA95 /* HealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B882944BFA0F38B3C3618727 /* HealthService.swift */; };
+		60C99D8192CA2B64122647B5 /* MotionNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99E2731129DA1ECB28F2016 /* MotionNoteApp.swift */; };
+		832E9A1BCDC66E4767A69482 /* motivation-hero.png in Resources */ = {isa = PBXBuildFile; fileRef = B489F08CAC8E3FA2961702C6 /* motivation-hero.png */; };
+		9658D45B879D9DA58CC5CACD /* SpeechCoach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387AE35D52E12C37444BF933 /* SpeechCoach.swift */; };
+		B2F8FFFB2D2D1F675E24EFFA /* FeishuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010F7057F4CA12C9E442490 /* FeishuService.swift */; };
+		F6A0628CD6FCC10C2CF14071 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA57F6C6A6E7C9327BF84D /* Models.swift */; };
+		F6A71E00A7E7C12C44F75EF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD15A8F895F8C01FD71C0C6 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		387AE35D52E12C37444BF933 /* SpeechCoach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCoach.swift; sourceTree = "<group>"; };
+		48F4684100DB68423FB7A461 /* MotionNote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MotionNote.entitlements; sourceTree = "<group>"; };
+		6662009685D9B8B2A63E0BC9 /* motion-note-mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "motion-note-mark.png"; sourceTree = "<group>"; };
+		6C76D439D1893327EA7DF95E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6CFA57F6C6A6E7C9327BF84D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		7010F7057F4CA12C9E442490 /* FeishuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeishuService.swift; sourceTree = "<group>"; };
+		8A9CB482779CC99039824CF8 /* MotionNote.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MotionNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B489F08CAC8E3FA2961702C6 /* motivation-hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "motivation-hero.png"; sourceTree = "<group>"; };
+		B882944BFA0F38B3C3618727 /* HealthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthService.swift; sourceTree = "<group>"; };
+		E99E2731129DA1ECB28F2016 /* MotionNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionNoteApp.swift; sourceTree = "<group>"; };
+		EFD15A8F895F8C01FD71C0C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		08B7E17C2E1A9B110AFCD512 /* MotionNote */ = {
+			isa = PBXGroup;
+			children = (
+				EFD15A8F895F8C01FD71C0C6 /* ContentView.swift */,
+				6C76D439D1893327EA7DF95E /* Info.plist */,
+				6CFA57F6C6A6E7C9327BF84D /* Models.swift */,
+				48F4684100DB68423FB7A461 /* MotionNote.entitlements */,
+				E99E2731129DA1ECB28F2016 /* MotionNoteApp.swift */,
+				B868C42CACA15845F3855B76 /* Services */,
+			);
+			path = MotionNote;
+			sourceTree = "<group>";
+		};
+		432B74EA9D401D55A2AA73E5 = {
+			isa = PBXGroup;
+			children = (
+				08B7E17C2E1A9B110AFCD512 /* MotionNote */,
+				A234A9CBA42D6FDC38E7A170 /* Resources */,
+				6115E75983D686A165DCC2B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6115E75983D686A165DCC2B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A9CB482779CC99039824CF8 /* MotionNote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A234A9CBA42D6FDC38E7A170 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6662009685D9B8B2A63E0BC9 /* motion-note-mark.png */,
+				B489F08CAC8E3FA2961702C6 /* motivation-hero.png */,
+			);
+			name = Resources;
+			path = MotionNote/Resources;
+			sourceTree = "<group>";
+		};
+		B868C42CACA15845F3855B76 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7010F7057F4CA12C9E442490 /* FeishuService.swift */,
+				B882944BFA0F38B3C3618727 /* HealthService.swift */,
+				387AE35D52E12C37444BF933 /* SpeechCoach.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFCED650AB8E4BF8150FDFC9 /* MotionNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83BADE0DDC6586747195DB4A /* Build configuration list for PBXNativeTarget "MotionNote" */;
+			buildPhases = (
+				4E7078DB9FE23327F82E8DC0 /* Sources */,
+				0023995D6CF2FEB437FFD903 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MotionNote;
+			packageProductDependencies = (
+			);
+			productName = MotionNote;
+			productReference = 8A9CB482779CC99039824CF8 /* MotionNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16C1A9DF0F92F9D6F66D5FF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					CFCED650AB8E4BF8150FDFC9 = {
+						DevelopmentTeam = 2V7WLF4BV9;
+					};
+				};
+			};
+			buildConfigurationList = 5EE2A1D171F996BDE19875B9 /* Build configuration list for PBXProject "MotionNote" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 432B74EA9D401D55A2AA73E5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6115E75983D686A165DCC2B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFCED650AB8E4BF8150FDFC9 /* MotionNote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0023995D6CF2FEB437FFD903 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F78CE4E8A9B838F673A545 /* motion-note-mark.png in Resources */,
+				832E9A1BCDC66E4767A69482 /* motivation-hero.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E7078DB9FE23327F82E8DC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A71E00A7E7C12C44F75EF5 /* ContentView.swift in Sources */,
+				B2F8FFFB2D2D1F675E24EFFA /* FeishuService.swift in Sources */,
+				2534C67EDCF8F9753660EA95 /* HealthService.swift in Sources */,
+				F6A0628CD6FCC10C2CF14071 /* Models.swift in Sources */,
+				60C99D8192CA2B64122647B5 /* MotionNoteApp.swift in Sources */,
+				9658D45B879D9DA58CC5CACD /* SpeechCoach.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		32C272CB7A9E16DF3A1935C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MotionNote/MotionNote.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2V7WLF4BV9;
+				INFOPLIST_FILE = MotionNote/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Motion Note";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "用于读取你的训练、活动能量与心率数据。";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "用于保存 Motion Note 生成的训练记录。";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "用于训练中的语音指令和私教课记录。";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "用于将私教课语音整理为训练计划。";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.motionnote.personal;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		470D105B9932302EC5D395AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MotionNote/MotionNote.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2V7WLF4BV9;
+				INFOPLIST_FILE = MotionNote/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Motion Note";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "用于读取你的训练、活动能量与心率数据。";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "用于保存 Motion Note 生成的训练记录。";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "用于训练中的语音指令和私教课记录。";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "用于将私教课语音整理为训练计划。";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.motionnote.personal;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		75B71086655A404B37FEFA9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		FFE6704933E4F5EC0FD54829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EE2A1D171F996BDE19875B9 /* Build configuration list for PBXProject "MotionNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75B71086655A404B37FEFA9B /* Debug */,
+				FFE6704933E4F5EC0FD54829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		83BADE0DDC6586747195DB4A /* Build configuration list for PBXNativeTarget "MotionNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32C272CB7A9E16DF3A1935C8 /* Debug */,
+				470D105B9932302EC5D395AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16C1A9DF0F92F9D6F66D5FF5 /* Project object */;
+}
