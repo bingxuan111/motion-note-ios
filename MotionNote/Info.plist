@@ -33,11 +33,13 @@
 	<string>Motion Note 需要读取你的运动、训练和活动消耗数据，用于记录训练和估算热量消耗。</string>
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>Motion Note 仅在你确认后写入训练记录或相关健康数据。</string>
-	<key>UIApplicationSceneManifest</key>
-	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
-		<false/>
-	</dict>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
 	<key>UILaunchScreen</key>
 	<dict/>
 </dict>

@@ -3,44 +3,79 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		08F78CE4E8A9B838F673A545 /* motion-note-mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 6662009685D9B8B2A63E0BC9 /* motion-note-mark.png */; };
-		2534C67EDCF8F9753660EA95 /* HealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B882944BFA0F38B3C3618727 /* HealthService.swift */; };
-		60C99D8192CA2B64122647B5 /* MotionNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99E2731129DA1ECB28F2016 /* MotionNoteApp.swift */; };
 		832E9A1BCDC66E4767A69482 /* motivation-hero.png in Resources */ = {isa = PBXBuildFile; fileRef = B489F08CAC8E3FA2961702C6 /* motivation-hero.png */; };
-		9658D45B879D9DA58CC5CACD /* SpeechCoach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387AE35D52E12C37444BF933 /* SpeechCoach.swift */; };
-		B2F8FFFB2D2D1F675E24EFFA /* FeishuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010F7057F4CA12C9E442490 /* FeishuService.swift */; };
-		F6A0628CD6FCC10C2CF14071 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA57F6C6A6E7C9327BF84D /* Models.swift */; };
-		F6A71E00A7E7C12C44F75EF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD15A8F895F8C01FD71C0C6 /* ContentView.swift */; };
+		A10000000000000000000001 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* main.m */; };
+		A10000000000000000000002 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* AppDelegate.m */; };
+		A10000000000000000000003 /* Models.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* Models.m */; };
+		A10000000000000000000004 /* FeishuService.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000007 /* FeishuService.m */; };
+		A10000000000000000000005 /* HealthService.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000009 /* HealthService.m */; };
+		A10000000000000000000006 /* SpeechCoach.m in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000B /* SpeechCoach.m */; };
+		A10000000000000000000007 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000D /* MainTabBarController.m */; };
+		A10000000000000000000008 /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000F /* PlanViewController.m */; };
+		A10000000000000000000009 /* CoachViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000011 /* CoachViewController.m */; };
+		A1000000000000000000000A /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000013 /* RecordViewController.m */; };
+		F8CD0FDDAA7F127D823D1EEF /* libPods-MotionNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E40EE186ABD035C38D1DF1D1 /* libPods-MotionNote.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		387AE35D52E12C37444BF933 /* SpeechCoach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCoach.swift; sourceTree = "<group>"; };
+		0E5FF9A3A4A3DAC56E0CBFF9 /* Pods-MotionNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotionNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotionNote/Pods-MotionNote.release.xcconfig"; sourceTree = "<group>"; };
 		48F4684100DB68423FB7A461 /* MotionNote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MotionNote.entitlements; sourceTree = "<group>"; };
 		6662009685D9B8B2A63E0BC9 /* motion-note-mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "motion-note-mark.png"; sourceTree = "<group>"; };
 		6C76D439D1893327EA7DF95E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		6CFA57F6C6A6E7C9327BF84D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		7010F7057F4CA12C9E442490 /* FeishuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeishuService.swift; sourceTree = "<group>"; };
-		8A9CB482779CC99039824CF8 /* MotionNote.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MotionNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A9CB482779CC99039824CF8 /* MotionNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000000000000000000001 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B10000000000000000000002 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B10000000000000000000003 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B10000000000000000000004 /* Models.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
+		B10000000000000000000005 /* Models.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Models.m; sourceTree = "<group>"; };
+		B10000000000000000000006 /* FeishuService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeishuService.h; sourceTree = "<group>"; };
+		B10000000000000000000007 /* FeishuService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeishuService.m; sourceTree = "<group>"; };
+		B10000000000000000000008 /* HealthService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HealthService.h; sourceTree = "<group>"; };
+		B10000000000000000000009 /* HealthService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthService.m; sourceTree = "<group>"; };
+		B1000000000000000000000A /* SpeechCoach.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeechCoach.h; sourceTree = "<group>"; };
+		B1000000000000000000000B /* SpeechCoach.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeechCoach.m; sourceTree = "<group>"; };
+		B1000000000000000000000C /* MainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		B1000000000000000000000D /* MainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		B1000000000000000000000E /* PlanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanViewController.h; sourceTree = "<group>"; };
+		B1000000000000000000000F /* PlanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanViewController.m; sourceTree = "<group>"; };
+		B10000000000000000000010 /* CoachViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoachViewController.h; sourceTree = "<group>"; };
+		B10000000000000000000011 /* CoachViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoachViewController.m; sourceTree = "<group>"; };
+		B10000000000000000000012 /* RecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		B10000000000000000000013 /* RecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
 		B489F08CAC8E3FA2961702C6 /* motivation-hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "motivation-hero.png"; sourceTree = "<group>"; };
-		B882944BFA0F38B3C3618727 /* HealthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthService.swift; sourceTree = "<group>"; };
-		E99E2731129DA1ECB28F2016 /* MotionNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionNoteApp.swift; sourceTree = "<group>"; };
-		EFD15A8F895F8C01FD71C0C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E40EE186ABD035C38D1DF1D1 /* libPods-MotionNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MotionNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE952D1F3D58DFF8601EC29 /* Pods-MotionNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotionNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MotionNote/Pods-MotionNote.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B831874CBCEA1F53E34BA9B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CD0FDDAA7F127D823D1EEF /* libPods-MotionNote.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		08B7E17C2E1A9B110AFCD512 /* MotionNote */ = {
 			isa = PBXGroup;
 			children = (
-				EFD15A8F895F8C01FD71C0C6 /* ContentView.swift */,
+				B10000000000000000000001 /* main.m */,
+				B10000000000000000000002 /* AppDelegate.h */,
+				B10000000000000000000003 /* AppDelegate.m */,
 				6C76D439D1893327EA7DF95E /* Info.plist */,
-				6CFA57F6C6A6E7C9327BF84D /* Models.swift */,
+				B10000000000000000000004 /* Models.h */,
+				B10000000000000000000005 /* Models.m */,
 				48F4684100DB68423FB7A461 /* MotionNote.entitlements */,
-				E99E2731129DA1ECB28F2016 /* MotionNoteApp.swift */,
 				B868C42CACA15845F3855B76 /* Services */,
+				C10000000000000000000001 /* ViewControllers */,
 			);
 			path = MotionNote;
 			sourceTree = "<group>";
@@ -51,6 +86,8 @@
 				08B7E17C2E1A9B110AFCD512 /* MotionNote */,
 				A234A9CBA42D6FDC38E7A170 /* Resources */,
 				6115E75983D686A165DCC2B3 /* Products */,
+				7D5CC265CA0B0D333A661D10 /* Pods */,
+				FEBEA9CF165C50DD23798392 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +97,15 @@
 				8A9CB482779CC99039824CF8 /* MotionNote.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7D5CC265CA0B0D333A661D10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAE952D1F3D58DFF8601EC29 /* Pods-MotionNote.debug.xcconfig */,
+				0E5FF9A3A4A3DAC56E0CBFF9 /* Pods-MotionNote.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A234A9CBA42D6FDC38E7A170 /* Resources */ = {
@@ -75,11 +121,37 @@
 		B868C42CACA15845F3855B76 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				7010F7057F4CA12C9E442490 /* FeishuService.swift */,
-				B882944BFA0F38B3C3618727 /* HealthService.swift */,
-				387AE35D52E12C37444BF933 /* SpeechCoach.swift */,
+				B10000000000000000000006 /* FeishuService.h */,
+				B10000000000000000000007 /* FeishuService.m */,
+				B10000000000000000000008 /* HealthService.h */,
+				B10000000000000000000009 /* HealthService.m */,
+				B1000000000000000000000A /* SpeechCoach.h */,
+				B1000000000000000000000B /* SpeechCoach.m */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		C10000000000000000000001 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000000C /* MainTabBarController.h */,
+				B1000000000000000000000D /* MainTabBarController.m */,
+				B1000000000000000000000E /* PlanViewController.h */,
+				B1000000000000000000000F /* PlanViewController.m */,
+				B10000000000000000000010 /* CoachViewController.h */,
+				B10000000000000000000011 /* CoachViewController.m */,
+				B10000000000000000000012 /* RecordViewController.h */,
+				B10000000000000000000013 /* RecordViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FEBEA9CF165C50DD23798392 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E40EE186ABD035C38D1DF1D1 /* libPods-MotionNote.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,16 +161,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83BADE0DDC6586747195DB4A /* Build configuration list for PBXNativeTarget "MotionNote" */;
 			buildPhases = (
+				5D49CA1A5969B19EA1A891B8 /* [CP] Check Pods Manifest.lock */,
 				4E7078DB9FE23327F82E8DC0 /* Sources */,
 				0023995D6CF2FEB437FFD903 /* Resources */,
+				B831874CBCEA1F53E34BA9B4 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MotionNote;
-			packageProductDependencies = (
-			);
 			productName = MotionNote;
 			productReference = 8A9CB482779CC99039824CF8 /* MotionNote.app */;
 			productType = "com.apple.product-type.application";
@@ -111,13 +183,9 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
-				TargetAttributes = {
-					CFCED650AB8E4BF8150FDFC9 = {
-						DevelopmentTeam = 2V7WLF4BV9;
-					};
-				};
 			};
 			buildConfigurationList = 5EE2A1D171F996BDE19875B9 /* Build configuration list for PBXProject "MotionNote" */;
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,8 +193,6 @@
 				en,
 			);
 			mainGroup = 432B74EA9D401D55A2AA73E5;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 6115E75983D686A165DCC2B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -148,17 +214,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5D49CA1A5969B19EA1A891B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MotionNote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4E7078DB9FE23327F82E8DC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6A71E00A7E7C12C44F75EF5 /* ContentView.swift in Sources */,
-				B2F8FFFB2D2D1F675E24EFFA /* FeishuService.swift in Sources */,
-				2534C67EDCF8F9753660EA95 /* HealthService.swift in Sources */,
-				F6A0628CD6FCC10C2CF14071 /* Models.swift in Sources */,
-				60C99D8192CA2B64122647B5 /* MotionNoteApp.swift in Sources */,
-				9658D45B879D9DA58CC5CACD /* SpeechCoach.swift in Sources */,
+				A10000000000000000000001 /* main.m in Sources */,
+				A10000000000000000000002 /* AppDelegate.m in Sources */,
+				A10000000000000000000003 /* Models.m in Sources */,
+				A10000000000000000000004 /* FeishuService.m in Sources */,
+				A10000000000000000000005 /* HealthService.m in Sources */,
+				A10000000000000000000006 /* SpeechCoach.m in Sources */,
+				A10000000000000000000007 /* MainTabBarController.m in Sources */,
+				A10000000000000000000008 /* PlanViewController.m in Sources */,
+				A10000000000000000000009 /* CoachViewController.m in Sources */,
+				A1000000000000000000000A /* RecordViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,11 +262,12 @@
 /* Begin XCBuildConfiguration section */
 		32C272CB7A9E16DF3A1935C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAE952D1F3D58DFF8601EC29 /* Pods-MotionNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MotionNote/MotionNote.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2V7WLF4BV9;
+				DEVELOPMENT_TEAM = L83UYHTXS2;
 				INFOPLIST_FILE = MotionNote/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Motion Note";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "用于读取你的训练、活动能量与心率数据。";
@@ -182,6 +278,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited) -framework CoreServices -framework WebKit";
 				PRODUCT_BUNDLE_IDENTIFIER = com.motionnote.personal;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -190,11 +287,12 @@
 		};
 		470D105B9932302EC5D395AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5FF9A3A4A3DAC56E0CBFF9 /* Pods-MotionNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MotionNote/MotionNote.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2V7WLF4BV9;
+				DEVELOPMENT_TEAM = L83UYHTXS2;
 				INFOPLIST_FILE = MotionNote/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Motion Note";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "用于读取你的训练、活动能量与心率数据。";
@@ -205,6 +303,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited) -framework CoreServices -framework WebKit";
 				PRODUCT_BUNDLE_IDENTIFIER = com.motionnote.personal;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -268,9 +367,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -324,9 +420,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};

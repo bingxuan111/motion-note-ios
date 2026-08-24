@@ -17,3 +17,6 @@ local-feishu/runtime/
 .build/
 .swiftpm/
 Package.resolved
+
+# CocoaPods (Podfile.lock and workspace remain versioned)
+Pods/
