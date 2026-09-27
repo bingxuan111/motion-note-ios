@@ -34,6 +34,26 @@ targets:
       path: MotionNote/Info.plist
       properties:
         UILaunchScreen: {}
+        NSLocalNetworkUsageDescription: 用于连接同一局域网中 Mac 上的训练计划服务，获取最近训练计划。
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+          NSExceptionDomains:
+            "127.0.0.0/8":
+              NSExceptionAllowsInsecureHTTPLoads: true
+            "10.0.0.0/8":
+              NSExceptionAllowsInsecureHTTPLoads: true
+            "172.16.0.0/12":
+              NSExceptionAllowsInsecureHTTPLoads: true
+            "192.168.0.0/16":
+              NSExceptionAllowsInsecureHTTPLoads: true
+            "169.254.0.0/16":
+              NSExceptionAllowsInsecureHTTPLoads: true
+            "::1":
+              NSExceptionAllowsInsecureHTTPLoads: true
+            "fc00::/7":
+              NSExceptionAllowsInsecureHTTPLoads: true
+            "fe80::/10":
+              NSExceptionAllowsInsecureHTTPLoads: true
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
           - UIInterfaceOrientationLandscapeLeft

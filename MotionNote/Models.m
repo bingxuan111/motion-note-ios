@@ -135,3 +135,128 @@
 }
 
 @end
+
+
+@implementation TrainPlanAbstractContentDataModel
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{
+        @"identifier": @"id",
+        @"name": @"name",
+    };
+}
+
+@end
+
+
+@implementation TrainPlanAbstractDataModel
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{
+        @"identifier": @"id",
+        @"itemIdentifier": @"item_id",
+        @"trainingDate": @"training_date",
+        @"title": @"title",
+        @"durationMinutes": @"duration_minutes",
+        @"documentURL": @"document_url",
+        @"documentToken": @"document_token",
+        @"preWorkoutContentIdentifiers": @"pre_workout_content_ids",
+        @"postWorkoutStretchContentIdentifiers": @"post_workout_stretch_content_ids",
+        @"preWorkoutContents": @"pre_workout_contents",
+        @"postWorkoutStretchContents": @"post_workout_stretch_contents",
+    };
+}
+
++ (NSValueTransformer *)trainingDateJSONTransformer {
+    return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *dateString, BOOL *success, NSError **error) {
+        if (![dateString isKindOfClass:NSString.class]) {
+            if (success) *success = NO;
+            return nil;
+        }
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        formatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
+        formatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+        formatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
+        formatter.dateFormat = @"yyyy-MM-dd";
+        NSDate *date = [formatter dateFromString:dateString];
+        if (success) *success = date != nil;
+        return date;
+    } reverseBlock:^id(NSDate *date, BOOL *success, NSError **error) {
+        if (![date isKindOfClass:NSDate.class]) {
+            if (success) *success = NO;
+            return nil;
+        }
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        formatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
+        formatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+        formatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
+        formatter.dateFormat = @"yyyy-MM-dd";
+        return [formatter stringFromDate:date];
+    }];
+}
+
++ (NSValueTransformer *)preWorkoutContentsJSONTransformer {
+    return [MTLJSONAdapter arrayTransformerWithModelClass:TrainPlanAbstractContentDataModel.class];
+}
+
++ (NSValueTransformer *)postWorkoutStretchContentsJSONTransformer {
+    return [MTLJSONAdapter arrayTransformerWithModelClass:TrainPlanAbstractContentDataModel.class];
+}
+
+@end
+
+
+@implementation PrepareDataModel
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{
+        @"identifier": @"id",
+        @"name": @"name",
+        @"sequenceNumber": @"sequence_no",
+        @"durationText": @"duration_text",
+        @"durationMinutes": @"duration_minutes",
+        @"instructions": @"instructions",
+    };
+}
+
+@end
+
+
+@implementation TrainItemDataModel
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{
+        @"identifier": @"id",
+        @"itemIdentifier": @"item_id",
+        @"sequenceNumber": @"sequence_no",
+        @"category": @"category",
+        @"durationText": @"duration_text",
+        @"durationMinutes": @"duration_minutes",
+        @"name": @"name",
+        @"setCount": @"set_count",
+        @"repetitionsPerSet": @"repetitions_per_set",
+        @"restSeconds": @"rest_seconds",
+        @"trainingWeight": @"training_weight",
+        @"preparation": @"preparation",
+        @"movementTrajectory": @"movement_trajectory",
+        @"notes": @"notes",
+    };
+}
+
+@end
+
+
+@implementation PostDataModel
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{
+        @"identifier": @"id",
+        @"name": @"name",
+        @"sequenceNumber": @"sequence_no",
+        @"durationText": @"duration_text",
+        @"durationMinutes": @"duration_minutes",
+        @"instructions": @"instructions",
+    };
+}
+
+@end

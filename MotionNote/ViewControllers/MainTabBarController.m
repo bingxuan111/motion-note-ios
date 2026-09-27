@@ -32,7 +32,7 @@
     self.activeWeeklyPlanID = [NSUserDefaults.standardUserDefaults stringForKey:@"activeWeeklyPlanID"] ?: @"";
 
     self.planController = [[PlanViewController alloc] initWithWorkoutStore:self.store];
-    self.coachController = [[CoachViewController alloc] initWithWorkoutStore:self.store speechCoach:self.speechCoach];
+    self.coachController = [[CoachViewController alloc] initWithSpeechCoach:self.speechCoach];
     self.recordController = [[RecordViewController alloc] initWithWorkoutStore:self.store healthService:self.healthService feishuService:self.feishuService];
 
     __weak typeof(self) weakSelf = self;
@@ -40,6 +40,10 @@
     self.planController.planSelectionHandler = ^(ImportedPlan *plan) { [weakSelf selectPlan:plan]; };
     self.recordController.planSelectionHandler = ^(ImportedPlan *plan) { [weakSelf selectPlan:plan]; };
     self.recordController.syncPlansHandler = ^{ [weakSelf synchronizePlansSilently:NO]; };
+    self.recordController.openVoiceCoachHandler = ^(NSString *itemIdentifier, NSString *title) {
+        [weakSelf.coachController configureWithItemIdentifier:itemIdentifier title:title];
+        [weakSelf showVoiceCoach];
+    };
 
     UINavigationController *planNavigation = [[UINavigationController alloc] initWithRootViewController:self.planController];
     UINavigationController *coachNavigation = [[UINavigationController alloc] initWithRootViewController:self.coachController];
@@ -58,6 +62,16 @@
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)showVoiceCoach {
+    if (self.viewControllers.count > 1) {
+        UINavigationController *coachNavigation = (UINavigationController *)self.viewControllers[1];
+        if ([coachNavigation isKindOfClass:UINavigationController.class]) {
+            [coachNavigation popToRootViewControllerAnimated:NO];
+        }
+    }
+    self.selectedIndex = 1;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
