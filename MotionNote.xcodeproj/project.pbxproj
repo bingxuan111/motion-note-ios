@@ -181,7 +181,6 @@
 		16C1A9DF0F92F9D6F66D5FF5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 			};
 			buildConfigurationList = 5EE2A1D171F996BDE19875B9 /* Build configuration list for PBXProject "MotionNote" */;
@@ -278,7 +277,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "$(inherited) -framework CoreServices -framework WebKit";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					CoreServices,
+					"-framework",
+					WebKit,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.motionnote.personal;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,7 +308,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "$(inherited) -framework CoreServices -framework WebKit";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					CoreServices,
+					"-framework",
+					WebKit,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.motionnote.personal;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

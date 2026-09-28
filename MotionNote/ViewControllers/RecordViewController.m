@@ -6,7 +6,7 @@
 #import <Masonry/Masonry.h>
 #import <WebKit/WebKit.h>
 
-NSString * const IPAdress = @"http://192.168.3.42:3000";
+NSString * const IPAdress = @"http://45.76.60.241:3000";
 NSString * const appSyncSecret = @"477e700fc1dc9b78f6bd9c0a6ce9e43253433c9183d8a82bad262bc88a1af681";
 static NSString * const apiLatestPlanAbstract = @"/api/latest-plan/abstract";
 
